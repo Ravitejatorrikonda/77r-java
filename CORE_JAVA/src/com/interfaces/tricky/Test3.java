@@ -48,6 +48,7 @@ interface Y{
 class Z implements X, Y{
 	 void displayData() {
 	  System.out.println("this is child class");
+//	  X.displayData();
 	}
 }
 
@@ -56,8 +57,7 @@ public class Test3 {
 	public static void main(String[] args) {
         Z z=new Z();
         z.displayData();
-        X.displayData();
-        Y.displayData();
+        
     
 
 	}

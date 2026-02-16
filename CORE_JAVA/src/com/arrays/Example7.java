@@ -18,6 +18,7 @@ public class Example7 {
 	for(int ele:arr) {
 		if(isPalindrome(ele)) {
 			System.out.println(ele);
+			System.err.println();
 		}
 	}
 

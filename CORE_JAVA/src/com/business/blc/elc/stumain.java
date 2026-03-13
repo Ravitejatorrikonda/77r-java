@@ -1,4 +1,5 @@
-package com.business.blc.elc;import java.awt.DisplayMode;
+package com.business.blc.elc;
+import java.awt.DisplayMode;
 
 public class stumain {
 

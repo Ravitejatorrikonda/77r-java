@@ -1,5 +1,6 @@
 package com.functional.interfacee;
 
+import java.util.Arrays;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
@@ -88,13 +89,15 @@ public class Example3 {
 
 		Employee[] employes = { emp1, emp2, emp3 };
 
-		for (Employee emp : employes) {
-			if (check.test(emp)) {
-				emp.setEmpSalary(emp.getEmpSalary() + (emp.getEmpSalary() + 0.10));
-
-				consumer.accept(emp);
-			}
-		}
+//		for (Employee emp : employes) {
+//			if (check.test(emp)) {
+//				emp.setEmpSalary(emp.getEmpSalary() + (emp.getEmpSalary() + 0.10));
+//
+//				consumer.accept(emp);
+//			}
+//		}
+		
+		Arrays.stream(employes).filter(check).forEach(System.out::println);
 
 	}
 

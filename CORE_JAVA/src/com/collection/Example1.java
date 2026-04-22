@@ -89,9 +89,9 @@ public class Example1 {
 //		System.out.println(it.next());
 //		
 		     
-		while(it.hasNext()) {
-			System.out.println(it.next());
-		}
+//		while(it.hasNext()) {
+//			System.out.println(it.next());
+//		}
 		
 		
 		

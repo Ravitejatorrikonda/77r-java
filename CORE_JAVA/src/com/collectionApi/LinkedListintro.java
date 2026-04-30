@@ -22,10 +22,11 @@ public class LinkedListintro {
 		
 		System.out.println(v);
 		
-		Enumeration<Integer> en=v.elements();
-		while (en.hasMoreElements()) {
-			Integer integer =  en.nextElement();
-			System.out.println(integer);
+		Iterator<Integer> en=v.iterator();
+		while (en.hasNext()) {
+		
+			System.out.println(en.next());
+		
 			
 			
 		}
